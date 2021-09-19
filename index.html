@@ -9,39 +9,48 @@
 </head>
 <body>
     <header>
-     <nav>
-        <ul class="nav-links">
-            <li><a class="nav-link" href="#">About</a></li>
-            <li><a class="nav-link" href="#">Store</a></li>
-            <li><a class="nav-link" href="#">Gmail</a></li>
-            <li><a class="nav-link" href="#">Images</a></li>
-    </ul>
-</nav>
-<div class="glass">
-    <img  src="CSS Stuff/Search.svg" alt="Magnifying Glass">
-</div>
-<div class="account">
-    <img src="CSS Stuff/account_circle_black_24dp.svg" alt="User Account">
-</div>
-<div class="apps">
-    <img src="CSS Stuff/Apps.svg" alt="Applications List">
-</div>
-  </header>  
-<main>
-    <section class="presentation">
-        <div class="introduction">
-        <div class="search">
-            <input type="text" placeholder="">
-        </div>
-        <div class="cta">
-            <button class="cta-select">Google Search</button>
-            <button class="cta-add">I'm Feeling Lucky</button>
-            </div>
-        </div>
-        <div class="logo-container">
+        <nav>
+            <ul class="nav-links">
+                 <a href="#">About</a>
+                 <a href="#">Store</a>
+            </ul>
+            <ul class="nav-links2">
+                <a href="#">Gmail</a>
+                <a shref="#">Images</a>
+                <img id="apps" src="CSS Stuff/Apps.svg" alt="Applications List">
+                <img id="account" src="CSS Stuff/account_circle_black_24dp.svg" alt="User Account">
+                
+            </ul>
+        </nav>
+    </header>  
+
+    <section>
+        <div id="logo-container">
             <img src="CSS Stuff/googlelogo_color_272x92dp.png" alt="Google Logo">
         </div>
+        <div class="search">
+            <img id="glass" src="CSS Stuff/Search.svg" alt="Magnifying Glass">
+            <input type="text">
+        </div>
+        <div id="buttons">
+            <button class="button1">Google Search</button>
+            <button class="button2">I'm Feeling Lucky</button>
+        </div>
     </section>
-</main>
+
+    <footer>
+        <nav class="footer">
+            <ul id="footer-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </ul>
+            <ul id="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

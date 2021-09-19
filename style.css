@@ -1,95 +1,165 @@
-* {
+body {
     margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
 }
-header {
+section {
     display: flex;
-    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 .nav-links {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-.nav-link { 
-    font-size: 14px;
-    color:#222;
-    text-decoration: none;
-}
-.logo-container {
-    flex: 1;
-}
-.presentation {
-    display: flex;
-    margin: auto;
-    min-height: 80vh;
+    padding: 10px;
+    justify-content: flex-start;
     align-items: center;
 }
-.introduction {
-    flex: 1;
+.nav-links2 {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+#logo-container {
+    display: flex;
+    padding-bottom: 25px;
+}
+img:hover {
+    cursor: pointer;
 }
 .search {
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    color: rgba(0, 0, 0, .87);
-    word-wrap: break-word;
-    outline: none;
     display: flex;
-    flex: 100%;
-    margin-top: -37px;
-    height: 34px;
-    font-size: 16px;
-    -webkit-tap-highlight-color: transparent;
-    border-radius: 50%;
+    justify-content: space-between;
+    width: 600px;
+    height: 45px;
+    border: 1px solid #dfdbdb;
+    border-radius: 20px;
 }
-.cta {
-    position: absolute;
-    white-space: nowrap;
+#glass {
+    height: 20px;
+    padding-top: 12px;
+    padding-left: 14px;
+    opacity: 0.4;
 }
-.cta-select {
+.search:hover {
+    box-shadow: 0 0 15px rgb(223, 220, 223)
+}
+.search > input {
+    flex-grow: 8;
+    border: none;
+    outline: none;
+}    
+#buttons {
+    display: flex;
+    padding-top: 60px;
+    opacity: 0.7;
+}
+.button1 {
     background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
+    border: none;
     border-radius: 4px;
-    color: #3c4043;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
     min-width: 54px;
     text-align: center;
-    cursor: pointer;
     user-select: none;
 }
-.cta-add {
+.button2 {
     background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
+    border: none;
     border-radius: 4px;
-    color: #3c4043;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
     min-width: 54px;
     text-align: center;
-    cursor: pointer;
     user-select: none;
 }
-nav {
-    flex: 1;
+button:hover {
+    cursor: pointer;
+    box-shadow: #70757a;
 }
-.glass {
+a {
+    margin: 5px 5px;
+    text-decoration: none;
+    color: #222
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+#footer-left {
+    display: flex;
+    justify-content: flex-start
+    align-items: center;
+    padding-left: 30px;
+}
+#footer-right {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding-right: 30px;
+}
+#glass {
     
 }
-.account {
-    
+ul > a, ul > img {
+    padding: 0 8px;
 }
-.apps {
-    
+#account:hover, #apps:hover {
+    border-radius: 200;
+    box-shadow: #70757a;
 }
+/* I had to directly copy the values of this next part =( */
+
+@media (max-width: 630px) {
+    .footer {
+        flex-direction: column;
+    }
+    #footer-left {
+        justify-content: center;
+    }
+    #footer-right {
+        justify-content: center;
+    }
+    .logo-container {
+        width: 95vw;
+    }
+}
+@media (max-height: 522px) {
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    footer {
+        position: relative;
+    }
+}
+@media (max-height: 522px) and (max-width: 630px) {
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        margin-bottom: 13px;
+    }
+    footer {
+        position: relative;
+    }
+}
+
